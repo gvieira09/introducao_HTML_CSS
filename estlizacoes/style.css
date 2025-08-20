@@ -1,0 +1,105 @@
+/* Seletor global - * indica todos os elementos*/
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    /* Espaço externo */
+    padding: 0;
+    /* Espaço interno */
+
+    box-sizing: border-box; /*inclui espaço (interno e externo) e bordas no tamanho do elemento*/
+}
+
+h1{
+    opacity: ;
+    position: ;
+    z-index: ;
+}
+
+#cabecalho {
+    background-color:rgb(8, 75, 126);
+    display: flex; /* ativo o flexbox para poder alinhar os meus elementos filhos */
+    justify-content: space-between;/*alinha os filhos no sentido do flex*/
+    align-items: center;/*alinha os filhos no sentido contrario do flex*/
+}   
+
+#cabecalho > img{
+    width: 300px; /* largura */
+    height: 300px; /* altura */
+}
+
+#cabecalho > nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#cabecalho > nav > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+/* Seção Produtos */
+
+#container-flex-produtos{
+  /*  background-color: rgb(4, 95, 118);*/
+    display: flex; /*ativa o flexbox*/
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    /*gap - espaço da linha e coluna*/ 
+}
+
+.card-produto{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+}
+
+.card-produto > img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    object-position: top;
+}
+
+#container-flex-suporte{
+    background-color: rgb(182, 185, 186);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 0;
+}
+
+form{
+    background-color: rgb(28, 87, 142);
+    width: 80%;
+    height: 1000px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_campos_input{
+    height: 35px;
+    border: 10px soid #572898;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button{  
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(246, 0, 225);
+}
